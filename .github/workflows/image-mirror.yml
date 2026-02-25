@@ -125,6 +125,7 @@ jobs:
             echo $i: ${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${tagName} >> images.yml;
             echo ${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${tagName} >> dockerhub-image.yml;
           done
+          echo "images.yml:"
           cat images.yml
           ./image-syncer  --auth=./auth.yml --images=./images.yml 
       - name: Add Success Issues

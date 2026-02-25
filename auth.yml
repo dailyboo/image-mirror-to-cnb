@@ -1,3 +1,6 @@
+docker.cnb.cool:
+  username: $TARGET_REGISTRY_USER
+  password: $TARGET_REGISTRY_PASSWORD
 registry.cn-beijing.aliyuncs.com:
   username: $TARGET_REGISTRY_USER
   password: $TARGET_REGISTRY_PASSWORD
